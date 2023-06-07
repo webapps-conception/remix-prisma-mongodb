@@ -17,31 +17,31 @@ Already had an account? Follow these additional steps:
 
 If you will be using an existing account, head to the dashboard. From there you will see a dropdown in the top left corner of the screen. If you pop that open you will see the option New Project.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/new-project.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/new-project.png)
 
 Once you click on that, hit the Build a Database button.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/build-a-database.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/build-a-database.png)
 
 From there you should be able to follow along with the rest of the steps below.
 
 You should land on a screen with a few options. Choose the Free option for the purposes of this series. Then hit the Create button:
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-free-tier.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-free-tier.png)
 
 When you select that option, you will be brought to a page that allows you to configure the cluster that will be generated. For your application, you can use the default settings. Just click Create Cluster near the bottom right of the page.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-default-settings.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-default-settings.png)
 
 This will kick off the provisioning and deployment of your MongoDB cluster! All you need now is a database user and a way to connect to the database. Fortunately, MongoDB will walk you through this setup during their quickstart process.
 
 You will see a few prompts that help you make these configurations. Follow the prompts to create a new user.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-user-setup.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-user-setup.png)
 
 Then, in the Where would you like to connect from? section, hit Add My Current IP Address to whitelist your development machine's IP address, allowing it to connect to the database.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-ip-setup.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-1/mongodb-ip-setup.png)
 
 With those steps completed, your database should finish its provisioning process within a few minutes (at most) and be ready for you to play with!
 
@@ -284,11 +284,11 @@ After filling those out, hit Create bucket at the very bottom of the form.
 
 When the bucket is done being created, you will be sent to the bucket's dashboard page on the Objects tab. Navigate to the Permissions tab.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-permissions.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-permissions.png)
 
 In this tab, hit the Edit button under the Block public access section. In this form, uncheck the Block all public access box and hit Save changes. This sets your bucket as public, which will allow your application to access the images.
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-access.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-access.png)
 
 Below that section you will see a Bucket policy section. Paste in the following policy, and be sure to replace <bucket-name> with your bucket's name. This policy will allow your images to be publicly read:
 
@@ -309,7 +309,7 @@ Below that section you will see a Bucket policy section. Paste in the following 
 }
 ```
 
-!(https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-policy.png)
+![](https://prismablog.vercel.app/blog/posts/fullstack-mongodb-remix-prisma-4/aws-bucket-policy.png)
 
 
 You now have your AWS user and S3 bucket set up. Next you need to save the keys and bucket configurations into your .env file so they can be used later on.
