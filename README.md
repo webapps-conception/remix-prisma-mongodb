@@ -3,6 +3,8 @@
 Demo application using Remix, MongoDB, Prisma and TailwindCSS that you can build by following along in the series: <tbd>
 
 - [Remix Docs](https://remix.run/docs)
+- [Build A Fullstack App with Remix, Prisma & MongoDB: Project Setup](https://www.prisma.io/blog/fullstack-remix-prisma-mongodb-1-7D0BfTXBmB6r)
+- [GitHub kudos-remix-mongodb-prisma - part-1](https://github.com/sabinadams/kudos-remix-mongodb-prisma/tree/part-1)
 
 ## Create a MongoDB instance
 In this project, you will be using Prisma to interact with a MongoDB database. Before you configure Prisma, however, you will need a MongoDB instance to connect to!
